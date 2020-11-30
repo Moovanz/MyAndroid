@@ -9,3 +9,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 }
+
+
+// Build number(about,system) QSR1.190920.001
+// Developer option (about > advance, system > advance)
+// Enable usb debugging mode
