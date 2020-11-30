@@ -10,7 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyAndroid">
         <!--activity = pages that user will see-->
-        <activity android:name=".MainActivity">
+        <activity
+            android:theme="@style/AppNoActionBar"
+            android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

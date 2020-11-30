@@ -1,98 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".MainActivity"
-    android:gravity="center_horizontal"
-    android:paddingLeft="18dp"
-    android:paddingRight="18dp"
+    android:background="@drawable/login_background"
+
     >
     <!-- command + option + l set page format-->
 
-    <ImageView
-        android:layout_marginTop="32dp"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:src="@color/black"
-        />
-    <EditText
-        android:layout_marginTop="32dp"
-        android:hint="username"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-
-        />
-    <EditText
-        android:layout_marginTop="8dp"
-        android:hint="password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        />
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="login"
-        />
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="forgot password"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:textColor="@color/black"
-        android:textAllCaps="false"
-        />
     <LinearLayout
-        android:layout_marginTop="20dp"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
+        android:gravity="center_horizontal"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:orientation="vertical"
+        android:paddingBottom="120dp"
         >
-        <View
-            android:background="#fe6000"
-            android:layout_width="120dp"
-            android:layout_height="1dp"
+        <ImageView
+            android:layout_marginTop="32dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/logo2"
+            />
+        <EditText
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="32dp"
+            android:hint="username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_edittext_background"
+            android:textColor="#ffffff"
+
 
             />
-        <TextView
-            android:layout_marginRight="8dp"
-            android:layout_marginLeft="8dp"
+        <EditText
+            android:inputType="textPassword"
+            android:layout_marginTop="8dp"
+            android:hint="password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_edittext_background"
+            android:textColor="#ffffff"
+
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="login"
+            android:backgroundTint="@drawable/button_login_background"
+            android:textColor="#ffffff"
+
+            />
+        <Button
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="forgot password"
+            android:textColor="#b3ffffff"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:backgroundTint='@android:color/transparent'
+            android:textAllCaps="false"
+            />
+        <LinearLayout
+            android:layout_marginTop="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="or"/>
-        <View
-            android:background="#fe6000"
-            android:layout_width="120dp"
-            android:layout_height="1dp"
-            />
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+            <View
+                android:background="#80FE6000"
+                android:layout_width="120dp"
+                android:layout_height="1dp"
+
+                />
+            <TextView
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#99FFFFFF"
+                android:text="or"/>
+            <View
+                android:background="#80FE6000"
+                android:layout_width="120dp"
+                android:layout_height="1dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="28dp"
+            android:layout_marginTop="28dp"
+
+
+            >
+            <ImageView
+                android:background="@drawable/circle_button_background"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/facebook"
+                android:layout_marginRight="18dp"
+                app:tint="#0D47A1" />
+            <ImageView
+                android:background="@drawable/circle_button_background"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:padding="9dp"
+                android:src="@drawable/google"
+                app:tint="#F44336"
+                />
+        </LinearLayout>
     </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginBottom="28dp"
-        android:layout_marginTop="28dp"
-
-
-        >
-       <ImageView
-           android:layout_width="60dp"
-           android:layout_height="60dp"
-           android:src="@color/black"
-           android:layout_marginRight="18dp"
-           />
-        <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:src="@color/teal_200"
-            />
-    </LinearLayout>
 
 
 
-</LinearLayout>
+</ScrollView>
 
     <!--mipmap folder user to store icon -->
